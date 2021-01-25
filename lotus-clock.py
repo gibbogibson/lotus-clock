@@ -14,7 +14,7 @@ font = pygame.font.Font('DS-DIGII.TTF',100)
 
 s2Img = pygame.image.load('s2_logo.jpeg')
 
-white = (255,255,255)
+white = (240,255,250)
 black = (0,0,0)
 
 screen.blit(s2Img, (10,40))
@@ -44,7 +44,7 @@ while running:
     time = str(hour) + ":" + str(minute)
     print(time)
     text = font.render(time,True,white)
-    screen.blit(text, (60,75))
+    screen.blit(text, (80,70))
 
     pygame.display.update()
  
