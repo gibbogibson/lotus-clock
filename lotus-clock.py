@@ -10,7 +10,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((320,240))
 #pygame.display.set_caption('Digital Clock')
-font = pygame.font.SysFont('Comic Sans MS',30)
+font = pygame.font.SysFont('Comic Sans MS',100)
 
 s2Img = pygame.image.load('s2_logo.jpeg')
 
@@ -38,8 +38,8 @@ while running:
     minute = now.strftime('%M:%S')
     hour = int(now.strftime('%H'))
     print(hour," : ", minute)
-    if hour > 12:
-        hour = hour-12
+    if hour < 10:
+        hour = "0" + str(hour)
     
     time = str(hour) + ":" + str(minute)
     print(time)
