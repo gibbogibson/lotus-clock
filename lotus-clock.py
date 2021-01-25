@@ -8,7 +8,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((320,240))
 #pygame.display.set_caption('Digital Clock')
-#font = pygame.font.SysFont('Comic Sans MS',130)
+font = pygame.font.SysFont('Comic Sans MS',30)
 
 white = (255,255,255)
 black = (0,0,0)
@@ -30,9 +30,13 @@ while running:
     if hour > 12:
         hour = hour-12
     
-    time = f'{hour}:{minute}'
+    time = '{hour}:{minute}'
 
     text = font.render(time,True,white)
     screen.blit(text, (0,0))
 
     pygame.display.update()
+ 
+    if event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_ESCAPE:
+            running = False
