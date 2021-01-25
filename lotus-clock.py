@@ -50,18 +50,26 @@ while running:
         
     minute = now.strftime('%M')
     hour = int(now.strftime('%H'))
-    print(hour," : ", minute)
+    #print(hour," : ", minute)
     if hour < 10:
         hour = "0" + str(hour)
     
+    month = now.strftime('%m')
+    year = now.strftime("%Y")
+    day = now.strftime("%d")
+    
     time = str(hour) + ":" + str(minute)
-    print(time)
+    #print(time)
     text = font.render(time,True,white)
     screen.blit(text, (60,70))
     
+    date = day + "/" + month + "/" + year
+    dateText = tempFont.render(date,True,white)
+    screen.blit(dateText, (10,200))
+    
     temp = str("10 *C")
     tempText = tempFont.render(temp,True,white)
-    screen.blit(tempText, (280,205))
+    screen.blit(tempText, (260,200))
     
     pygame.display.update()
  
