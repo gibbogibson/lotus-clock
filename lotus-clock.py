@@ -37,7 +37,7 @@ while running:
 
     minute = now.strftime('%M:%S')
     hour = int(now.strftime('%H'))
-    print("{hour}:{minute}")
+    print(hour," : ", minute)
     if hour > 12:
         hour = hour-12
     
