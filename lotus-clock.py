@@ -28,9 +28,9 @@ pygame.time.delay(2000)
 
 screen.fill(black)
 
-screen.blit(s2Img, (35,40))
-pygame.display.update()
-pygame.time.delay(2000)
+#screen.blit(s2Img, (35,40))
+#pygame.display.update()
+#pygame.time.delay(2000)
 
 running = True
 while running:
