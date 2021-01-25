@@ -41,7 +41,7 @@ while running:
     if hour > 12:
         hour = hour-12
     
-    time = hour + ":" + minute
+    time = str(hour) + ":" + str(minute)
     print(time)
     text = font.render(time,True,white)
     screen.blit(text, (0,40))
