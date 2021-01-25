@@ -1,5 +1,5 @@
 from datetime import datetime
-import pygame
+import pygame, os
 
 os.environ["SDL_FBDEV"] = "/dev/fb1"
 
