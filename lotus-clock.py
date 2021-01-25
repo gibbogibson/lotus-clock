@@ -19,9 +19,11 @@ s2SmallImg = pygame.image.load('esprit_s2_logo_125.jpg')
 white = (240,255,250)
 black = (0,0,0)
 
-screen.blit(lotusImg, (0,40))
+screen.blit(lotusImg, (0,30))
 pygame.display.update()
 pygame.time.delay(3000)
+
+screen.fill(black)
 
 screen.blit(s2Img, (35,40))
 pygame.display.update()
@@ -52,7 +54,7 @@ while running:
     time = str(hour) + ":" + str(minute)
     print(time)
     text = font.render(time,True,white)
-    screen.blit(text, (80,70))
+    screen.blit(text, (60,70))
 
     pygame.display.update()
  
