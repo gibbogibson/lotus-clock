@@ -17,7 +17,7 @@ s2Img = pygame.image.load('s2_logo.jpeg')
 white = (255,255,255)
 black = (0,0,0)
 
-gameDisplay.blit(s2Img, (0,40))
+screen.blit(s2Img, (0,40))
 pygame.display.update()
 pygame.time.delay(3000)
 
