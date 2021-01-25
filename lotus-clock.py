@@ -24,13 +24,13 @@ black = (0,0,0)
 
 screen.blit(lotusImg, (0,30))
 pygame.display.update()
-pygame.time.delay(3000)
+pygame.time.delay(2000)
 
 screen.fill(black)
 
 screen.blit(s2Img, (35,40))
 pygame.display.update()
-pygame.time.delay(3000)
+pygame.time.delay(2000)
 
 running = True
 while running:
@@ -60,7 +60,7 @@ while running:
     screen.blit(text, (280,205))
     
     temp = str("10 *C")
-    Temptext = tempFont.render(temp,True,white)
+    tempText = tempFont.render(temp,True,white)
     screen.blit(tempText, (60,70))
     
     pygame.display.update()
