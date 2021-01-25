@@ -4,7 +4,7 @@ import pygame, os
 os.environ["SDL_FBDEV"] = "/dev/fb1"
 
 pygame.init()
-
+pygame.mouse.get_visible(False)
 #icon = pygame.image.load('digitalClock.png')
 #pygame.display.set_icon(icon)
 
