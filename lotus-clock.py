@@ -11,13 +11,16 @@ pygame.init()
 screen = pygame.display.set_mode((320,240))
 #pygame.display.set_caption('Digital Clock')
 font = pygame.font.Font('DS-DIGII.TTF',100)
+tempFont = pygame.font.Font('DS-DIGII.TTF',30)
 
 lotusImg = pygame.image.load('lotus_black_320.jpg')
 s2Img = pygame.image.load('esprit_s2_logo_250.jpg')
 s2SmallImg = pygame.image.load('esprit_s2_logo_125.jpg')
 
-white = (240,255,250)
+white = (100,255,150)
 black = (0,0,0)
+#tempColour = (100,255,150)
+
 
 screen.blit(lotusImg, (0,30))
 pygame.display.update()
@@ -54,8 +57,12 @@ while running:
     time = str(hour) + ":" + str(minute)
     print(time)
     text = font.render(time,True,white)
-    screen.blit(text, (60,70))
-
+    screen.blit(text, (280,205))
+    
+    temp = str("10 *C")
+    Temptext = tempFont.render(temp,True,white)
+    screen.blit(tempText, (60,70))
+    
     pygame.display.update()
  
     
