@@ -44,7 +44,7 @@ while running:
     time = str(hour) + ":" + str(minute)
     print(time)
     text = font.render(time,True,white)
-    screen.blit(text, (40,100))
+    screen.blit(text, (60,75))
 
     pygame.display.update()
  
