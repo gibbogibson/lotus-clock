@@ -37,12 +37,12 @@ while running:
 
     minute = now.strftime('%M:%S')
     hour = int(now.strftime('%H'))
-    
+    print("{hour}:{minute}")
     if hour > 12:
         hour = hour-12
     
     time = "{hour}:{minute}"
-
+    print(time)
     text = font.render(time,True,white)
     screen.blit(text, (0,40))
 
