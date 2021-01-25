@@ -10,7 +10,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((320,240))
 #pygame.display.set_caption('Digital Clock')
-font = pygame.font.SysFont('Comic Sans MS',150)
+font = pygame.font.Font('DS-DIGII.TTF',150)
 
 s2Img = pygame.image.load('s2_logo.jpeg')
 
