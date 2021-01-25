@@ -57,11 +57,11 @@ while running:
     time = str(hour) + ":" + str(minute)
     print(time)
     text = font.render(time,True,white)
-    screen.blit(text, (280,205))
+    screen.blit(text, (60,70))
     
     temp = str("10 *C")
     tempText = tempFont.render(temp,True,white)
-    screen.blit(tempText, (60,70))
+    screen.blit(tempText, (280,205))
     
     pygame.display.update()
  
